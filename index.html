@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SYETR RAPS - Official Website</title>
   <style>
+    /* General Styles (Desktop First) */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -170,6 +171,59 @@
     form button:hover {
       background-color: #dba831;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+
+      .catalog, .concerts {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%; /* Adjust card width for smaller screens */
+      }
+
+      .about-section img {
+        max-width: 200px; /* Reduce image size */
+      }
+
+      .about-section p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      form input, form textarea {
+        width: 90%; /* Full width inputs */
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-section p {
+        font-size: 0.9rem;
+      }
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -220,8 +274,10 @@
     <div class="concerts">
       <div class="card">
         <h3>Agartala, Tripura, India</h3>
-        <p>Date: 01/02/2025</p>
-        <p>Venue: X-A-X-A-F-E-S-T MMXXV</p>
+        <p>Date: 16 February 2025</p>
+        <p>Time: 04:00 PM Onwards</p>
+        <p>Venue: Dasharath Deb Memorial Auditorium</p>
+        <p>Event: X A X A F E S T - MMXXV</p>
         <button onclick="window.location.href='https://www.skillboxes.com/events/x-a-x-a-f-e-s-t-mmxxv'">Buy Tickets</button>
       </div>
     </div>
@@ -230,7 +286,7 @@
   <section id="about" class="about-section">
     <h2>Know About SYETR</h2>
     <img src="DSC01323.png" alt="SYETR Image">
-    <p>SYETR RAPS is a trailblazing artist reshaping the Indian hip-hop scene. With hits like "I Don't Mind" featuring Saptak 7, the hauntingly soulful "SAZISHEIN" with Amritakshi Datta, and introspective tracks like "Hosh" and "Zehen," SYETR delves deep into themes of resilience, ambition, and life's complexities. His music reflects a unique blend of thought-provoking lyrics and captivating beats, making waves across the globe. Get ready to immerse yourself in the world of SYETR RAPS.</p>
+    <p>SYETR is one of the emerging hip-hop/rap artists from Tripura, India, celebrated for his exceptional arsenal of metaphors, intricate bars, emotionally resonant quotables, and mind-blowing, unpredictable flows. A pioneer in crafting tracks that evoke both thought and feeling, SYETR effortlessly blends technical mastery with raw authenticity, making waves in the Indian hip-hop scene and beyond.</p>
   </section>
 
   <section id="contact">
